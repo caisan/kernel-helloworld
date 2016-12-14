@@ -1,8 +1,11 @@
 #include<linux/init.h>
 #include<linux/module.h>
+/*
+ * #include <stdio.h>
+ * #include <stdlib.h>*/
 MODULE_LICENSE("BSD");
 MODULE_AUTHOR("caisan");
-
+/*next we will make this module to be a char device module*/
 static int hello_init(void)
 {
     printk(KERN_ALERT "hello wolrd");
